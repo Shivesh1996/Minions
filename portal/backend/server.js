@@ -8,26 +8,6 @@ app.use(cors({
   origin: "*"
 }));
 
-// app.get('/', (req, res) => {
-
-//   console.log(req);
-
-//   res.setHeader('Content-type', 'application/zip');
-
-//   let fileStream = fs.createReadStream("./templates/express-react.zip");
-//   fileStream.pipe(res);
-
-//   fileStream.on('error', function (error) {
-//     console.log('filestream error');
-//   });
-
-//   fileStream.on('close', function () {
-//     /** Close Filestream  **/
-//     console.log('filestream success');
-//     fileStream.destroy();
-//   });
-// })
-
 app.get('/download/:frontend/:backend', (req, res) => {
 
   let frontend = req.params.frontend;
