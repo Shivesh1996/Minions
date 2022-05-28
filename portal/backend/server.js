@@ -6,7 +6,7 @@ const port = 3001;
 
 app.use(cors({
   origin: "*"
-}));
+})); ``
 
 app.get('/download/:frontend/:backend', (req, res) => {
 
